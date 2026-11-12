@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="PISVA — a family coordination app designed around clarity, shared responsibility and everyday care.">
+<meta name="theme-color" content="#f7f8f5">
+<title>PISVA — Family, in sync.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header"><a class="brand" href="#home"><img src="assets/pisva-leaf-logo.png" alt=""><span>PISVA</span></a>
+<button class="menu" aria-label="Open navigation" aria-expanded="false">☰</button>
+<nav><a href="#story">About</a><a href="#screens">App preview</a><a href="#features">Features</a><a href="#technology">Technology</a><a class="nav-pill" href="#project">Project snapshot ↗</a></nav></header>
+<main id="home">
+<section class="hero wrap">
+<div class="hero-copy"><div class="eyebrow"><i></i> FAMILY COORDINATION, MADE CLEAR</div>
+<h1>Care is a team.<br><em>Stay in sync.</em></h1>
+<p class="lead">PISVA brings family responsibilities, appointments, notes and everyday follow-ups into one calm, shared space.</p>
+<div class="actions"><a class="primary" href="#screens">Explore the app <b>↓</b></a><a class="secondary" href="#story">Discover PISVA ↗</a></div>
+<div class="hero-caption"><span>Designed around family life</span><span>Built as a full-stack web app</span></div></div>
+<div class="hero-preview"><div class="preview-halo"></div><div class="screen-float float-a">✳ &nbsp; Clear responsibilities</div>
+<div class="device"><div class="device-notch"></div><img src="assets/pisva-screen-1.png" alt="PISVA Radar dashboard showing prioritized family follow-ups"></div>
+<div class="screen-float float-b"><span class="green-dot"></span> One shared picture</div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div></div>
+</section>
+<div class="ticker"><span>FAMILY RADAR</span><b>CASES & FOLLOW-UPS</b><span>APPOINTMENTS</span><b>SHARED NOTES</b><span>RESPONSIBILITY HANDOFFS</span></div>
+<section class="wrap story section" id="story"><div class="section-tag">01 / THE IDEA</div><div class="story-grid"><h2>Less to keep<br>in your head.<br><em>More in sync.</em></h2><div><p class="big">Family care involves many small details. PISVA helps bring those details together so everyone can understand what needs attention and who is responsible.</p><p>From a time-sensitive follow-up to an upcoming appointment, the app gives family members a clearer view of shared responsibilities — while keeping ownership explicit.</p><div class="principle"><span>✳</span><div><b>Clarity creates confidence.</b><small>Responsibilities are visible, handoffs require acceptance, and private documents remain separate from simple links or notes.</small></div></div></div></div></section>
+<section class="screens-section" id="screens"><div class="wrap"><div class="section-tag">02 / INSIDE PISVA</div><div class="section-title"><h2>A closer look<br><em>at the app.</em></h2><p>Explore real screens from the current PISVA experience. Select a view to see it up close.</p></div>
+<div class="gallery"><div class="gallery-stage"><button class="arrow prev" aria-label="Previous screenshot">←</button><div class="gallery-device"><img id="gallery-image" src="assets/pisva-screen-1.png" alt="PISVA app screen"></div><button class="arrow next" aria-label="Next screenshot">→</button></div>
+<div class="gallery-info"><div><span class="counter" id="counter">01 / 07</span><h3 id="screen-title">Radar dashboard</h3><p id="screen-desc">A prioritized view of what needs attention today.</p></div><div class="dots" aria-label="Choose app screen"></div></div>
+<div class="thumbs">
+<button class="thumb active" data-index="0"><img src="assets/pisva-screen-1.png" alt=""><span>Radar</span></button>
+<button class="thumb" data-index="1"><img src="assets/pisva-screen-2.png" alt=""><span>Responsibilities</span></button>
+<button class="thumb" data-index="2"><img src="assets/pisva-screen-3.png" alt=""><span>Appointments</span></button>
+<button class="thumb" data-index="3"><img src="assets/pisva-screen-4.png" alt=""><span>Notes</span></button>
+<button class="thumb" data-index="4"><img src="assets/pisva-screen-5.png" alt=""><span>Family</span></button>
+<button class="thumb" data-index="5"><img src="assets/pisva-screen-6.png" alt=""><span>Appointment detail</span></button>
+<button class="thumb" data-index="6"><img src="assets/pisva-screen-7.png" alt=""><span>Case detail</span></button>
+</div></div></div></section>
+<section class="wrap section features" id="features"><div class="section-tag">03 / WHAT IT SUPPORTS</div><div class="section-title"><h2>Every detail<br><em>has a place.</em></h2><p>Designed to support the practical rhythm of family coordination.</p></div><div class="feature-grid">
+<article><span class="icon">◎</span><small>01</small><h3>Family radar</h3><p>A prioritized overview of time-sensitive tasks, confirmations and follow-ups.</p></article>
+<article><span class="icon lilac">↔</span><small>02</small><h3>Clear ownership</h3><p>Responsibility handoffs are explicit and only change after the new owner accepts.</p></article>
+<article><span class="icon peach">▦</span><small>03</small><h3>Appointments</h3><p>Keep dates, locations and accompaniment requests visible in one place.</p></article>
+<article><span class="icon mint">▤</span><small>04</small><h3>Shared notes</h3><p>Capture family updates and link notes to the relevant case or follow-up.</p></article>
+</div></section>
+<section class="tech-section" id="technology"><div class="wrap"><div class="section-tag">04 / THE BUILD</div><div class="section-title"><h2>Human-centered<br><em>by design. Full-stack by build.</em></h2><p>A separated frontend, API backend and relational database power the experience.</p></div>
+<div class="tech-grid"><div class="architecture"><div class="layer"><small>FRONTEND</small><b>React 19 · TypeScript</b><span>Vite 8 · Tailwind CSS 4</span></div><div class="connector">REST API · JSON ↓</div><div class="layer"><small>BACKEND</small><b>Python · FastAPI</b><span>SQLAlchemy · Alembic</span></div><div class="connector">DATABASE QUERIES ↓</div><div class="layer"><small>DATA & CONTAINERS</small><b>PostgreSQL 17</b><span>Docker · Docker Compose</span></div></div>
+<div class="tech-list"><p><small>AUTHENTICATION & SECURITY</small><b>JWT access tokens · Argon2 password hashing</b></p><p><small>TESTING</small><b>Pytest · HTTPX</b></p><p><small>VERSION CONTROL</small><b>Git · GitHub</b></p><p><small>ARCHITECTURE</small><b>React client connected to a FastAPI REST API and PostgreSQL database</b></p></div></div></div></section>
+<section class="privacy"><div class="wrap privacy-inner"><div class="privacy-mark">⌑</div><div><div class="section-tag">PRIVATE SOURCE CODE</div><h2>See the experience.<br><em>The code stays private.</em></h2><p>This portfolio shares the product concept, selected interface screens and technology stack. The application source repository is private and is not linked here.</p></div><div class="lock">▣<small>PRIVATE<br>REPOSITORY</small></div></div></section>
+<section class="wrap project section" id="project"><div class="section-tag">05 / PROJECT SNAPSHOT</div><div class="project-card"><div><div class="eyebrow">THANK YOU FOR EXPLORING PISVA</div><h2>Thoughtful tools<br>for <em>family life.</em></h2><p>PISVA is an ongoing full-stack development project.</p></div><div class="project-facts"><p><small>PROJECT TYPE</small><b>Family coordination web application</b></p><p><small>CORE AREAS</small><b>Radar · Cases · Appointments · Notes · Family</b></p><p><small>SOURCE CODE</small><b><i></i> Private repository</b></p></div></div>
+<footer><a class="brand" href="#home"><img src="assets/pisva-leaf-logo.png" alt=""><span>PISVA</span></a><span>Family, in sync.</span><span>Portfolio presentation · 2026</span></footer></section>
+</main><script src="script.js"></script></body></html>
